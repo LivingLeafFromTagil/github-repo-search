@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="container">
+    <h1>GitHub Repo Search</h1>
+  </header>
+
+  <main class="container">
+    <img src="logo.png" alt="logo">
+    <form action="">
+      <input class="search-input" type="text" placeholder="Имя репозитория">
+      <button class="search-button">Найти</button>
+      <p class="empty-input">Пустое поле</p>
+      <p class="no-results">Нет результатов</p>
+    </form>
+    <div class="main-repos">
+      <h2>Репозитории</h2>
+      <table class="main-repos-table">
+        <thead class="repos-table-header">
+          <tr>
+            <td>Имя репозитория</td>
+            <td>Автор</td>
+            <td>Описание</td>
+            <td>Ссылка</td>
+          </tr>
+          <tbody class="repos-table-items">
+
+          </tbody>
+        </thead>
+      </table>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+
+</html>

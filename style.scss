@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  padding-top: 20px;
+}
+
+main {
+  margin-top: 40px;
+  text-align: center;
+  & > img {
+    width: 200px;
+    height: auto;
+  }
+  & > form {
+    margin-top: 20px;
+    & > input {
+      width: 300px;
+      padding: 5px;
+    }
+    & > p {
+      color: red;
+      display: none;
+    }
+    & > button {
+      padding: 5px;
+      width: 80px;
+    }
+  }
+  & > .main-repos {
+    margin-top: 40px;
+    & > .main-repos-table {
+      text-align: left;
+      width: 100%;
+      & > .repos-table-header {
+        font-weight: 700;
+        & > tr {
+          background-color: rgb(141, 175, 238);
+          & > td {
+            width: 28%;
+            padding: 10px;
+            padding-bottom: 20px;
+            &:nth-child(2) {
+              width: 16%;
+            }
+          }
+        }
+      }
+      & > .repos-table-items {
+        width: 28%;
+        font-weight: 400;
+        & > tr {
+          &:nth-child(even) {
+            background-color: rgb(201, 216, 244);
+          }
+
+          & > td {
+            padding: 10px;
+            padding-bottom: 20px;
+            &:nth-child(2) {
+              width: 16%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
