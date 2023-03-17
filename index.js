@@ -59,7 +59,6 @@ searchButton.addEventListener("click", async (event) => {
 		}
 
 		searchButton.disabled = false;
-		console.log(dataToTable);
 	} else {
 		emptyInputError.style.display = "block";
 	}
